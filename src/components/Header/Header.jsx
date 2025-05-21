@@ -6,14 +6,16 @@ const Header = () => {
 
   return (
     <header className={styles["header"]}>
-      <div className={styles["header__logo"]}>{logo}</div>
-      <nav className={styles["header__nav"]}>
-        {nav.map((item, idx) => (
-          <a key={idx} href="#" className={styles["header__nav-item"]}>
-            {item}
-          </a>
-        ))}
-      </nav>
+      <div className={styles["header__container"]}>
+        <div className={styles["header__logo"]}>{logo}</div>
+        <nav className={styles["header__nav"]}>
+          {nav.map((item, idx) => (
+            <a key={idx} href="#" className={styles["header__nav-item"]}>
+              {item}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 };

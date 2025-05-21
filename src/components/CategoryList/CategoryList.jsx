@@ -19,6 +19,7 @@ const CategoryList = () => {
           </div>
         ))}
       </div>
+      <div className={styles["category-list__stripe"]}></div>
     </section>
   );
 };
