@@ -39,6 +39,12 @@ const initialState = {
   footer: {
     text: "© 2024 Organic Fashion",
   },
+  hero: {
+    image: "https://via.placeholder.com/220x220?text=Plant",
+    title: "ORGANIC FASHION",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    button: "Shop Now",
+  },
 };
 
 const contentSlice = createSlice({
