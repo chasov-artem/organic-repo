@@ -3,6 +3,9 @@ import styles from "./NewCollection.module.scss";
 
 const NewCollection = () => {
   const newCollection = useSelector((state) => state.content.newCollection);
+  const description = useSelector(
+    (state) => state.content.newCollectionDescription
+  );
 
   return (
     <section className={styles["new-collection"]}>
@@ -10,14 +13,19 @@ const NewCollection = () => {
       <div className={styles["new-collection__items"]}>
         {newCollection.map((item) => (
           <div key={item.id} className={styles["new-collection__item"]}>
-            <img
-              src={item.image}
-              alt={item.title}
-              className={styles["new-collection__img"]}
-            />
+            <div className={styles["new-collection__img-arc"]}>
+              <img
+                src={item.image}
+                alt={item.title}
+                className={styles["new-collection__img"]}
+              />
+            </div>
             <div className={styles["new-collection__name"]}>{item.title}</div>
           </div>
         ))}
+      </div>
+      <div className={styles["new-collection__desc-wrap"]}>
+        <p className={styles["new-collection__desc"]}>{description}</p>
       </div>
     </section>
   );

@@ -16,6 +16,8 @@ const initialState = {
     { id: 2, title: "Ficus", image: "https://via.placeholder.com/120" },
     { id: 3, title: "Sansevieria", image: "https://via.placeholder.com/120" },
   ],
+  newCollectionDescription:
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   about: {
     title: "About Us",
     text: "We are passionate about organic fashion and plants. Our mission is to bring nature closer to your home.",
