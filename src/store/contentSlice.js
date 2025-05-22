@@ -22,6 +22,7 @@ const initialState = {
     title: "About Us",
     text: "We are passionate about organic fashion and plants. Our mission is to bring nature closer to your home.",
     image: "https://via.placeholder.com/200",
+    button: "Learn More",
   },
   contact: {
     socials: [

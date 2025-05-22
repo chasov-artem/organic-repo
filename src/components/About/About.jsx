@@ -16,6 +16,7 @@ const About = () => {
       <div className={styles["about__content"]}>
         <h2 className={styles["about__title"]}>{about.title}</h2>
         <p className={styles["about__text"]}>{about.text}</p>
+        <button className={styles["about__btn"]}>{about.button}</button>
       </div>
     </section>
   );
