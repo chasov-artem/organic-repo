@@ -9,6 +9,7 @@ const About = () => {
       <div className={styles["about__img-wrap"]}>
         <img
           src={about.image}
+          srcSet={`${about.image2x} 2x`}
           alt={about.title}
           className={styles["about__img"]}
         />

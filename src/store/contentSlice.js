@@ -62,7 +62,8 @@ const initialState = {
   about: {
     title: "About Us",
     text: "We are passionate about organic fashion and plants. Our mission is to bring nature closer to your home.",
-    image: "https://via.placeholder.com/200",
+    image: "/frame1/aboutus.png",
+    image2x: "/frame1/aboutus-2x.png",
     button: "Learn More",
   },
   contact: {
@@ -78,7 +79,8 @@ const initialState = {
         { name: "message", placeholder: "Enter your message" },
       ],
     },
-    image: "https://via.placeholder.com/200",
+    image: "/frame1/followus.png",
+    image2x: "/frame1/followus-2x.png",
   },
   footer: {
     text: "© 2024 Organic Fashion",

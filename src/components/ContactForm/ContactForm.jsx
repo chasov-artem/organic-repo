@@ -27,6 +27,7 @@ const ContactForm = () => {
         <div className={styles["contact__img-wrap"]}>
           <img
             src={contact.image}
+            srcSet={`${contact.image2x} 2x`}
             alt="Follow us"
             className={styles["contact__img"]}
           />
