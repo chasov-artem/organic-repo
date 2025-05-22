@@ -6,10 +6,36 @@ const initialState = {
     nav: ["Home", "About", "Shop", "New", "Contact"],
   },
   categories: [
-    { id: 1, title: "Plants", image: "https://via.placeholder.com/150" },
-    { id: 2, title: "Pots", image: "https://via.placeholder.com/150" },
-    { id: 3, title: "Care", image: "https://via.placeholder.com/150" },
-    { id: 4, title: "Decor", image: "https://via.placeholder.com/150" },
+    {
+      id: 1,
+      title: "Plants",
+      image: "/frame1/shop1.png",
+      image2x: "/frame1/shop1-2x.png",
+    },
+    {
+      id: 2,
+      title: "Pots",
+      image: "/frame1/shop2.png",
+      image2x: "/frame1/shop2-2x.png",
+    },
+    {
+      id: 3,
+      title: "Care",
+      image: "/frame1/shop3.png",
+      image2x: "/frame1/shop3-2x.png",
+    },
+    {
+      id: 4,
+      title: "Decor",
+      image: "/frame1/shop4.png",
+      image2x: "/frame1/shop4-2x.png",
+    },
+    {
+      id: 5,
+      title: "Seeds",
+      image: "/frame1/shop5.png",
+      image2x: "/frame1/shop5-2x.png",
+    },
   ],
   newCollection: [
     { id: 1, title: "Monstera", image: "https://via.placeholder.com/120" },
