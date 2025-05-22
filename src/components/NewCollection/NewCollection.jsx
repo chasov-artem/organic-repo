@@ -16,6 +16,7 @@ const NewCollection = () => {
             <div className={styles["new-collection__img-arc"]}>
               <img
                 src={item.image}
+                srcSet={`${item.image2x} 2x`}
                 alt={item.title}
                 className={styles["new-collection__img"]}
               />

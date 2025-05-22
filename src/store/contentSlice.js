@@ -38,9 +38,24 @@ const initialState = {
     },
   ],
   newCollection: [
-    { id: 1, title: "Monstera", image: "https://via.placeholder.com/120" },
-    { id: 2, title: "Ficus", image: "https://via.placeholder.com/120" },
-    { id: 3, title: "Sansevieria", image: "https://via.placeholder.com/120" },
+    {
+      id: 1,
+      title: "Monstera",
+      image: "/frame1/collection1.png",
+      image2x: "/frame1/collection1-2x.png",
+    },
+    {
+      id: 2,
+      title: "Ficus",
+      image: "/frame1/collection2.png",
+      image2x: "/frame1/collection2-2x.png",
+    },
+    {
+      id: 3,
+      title: "Sansevieria",
+      image: "/frame1/collection3.png",
+      image2x: "/frame1/collection3-2x.png",
+    },
   ],
   newCollectionDescription:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
