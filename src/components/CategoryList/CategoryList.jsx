@@ -3,7 +3,7 @@ import styles from "./CategoryList.module.scss";
 
 const CategoryList = () => {
   const categories = useSelector((state) => state.content.categories);
-  const stripe = categories[categories.length - 1]; // Seeds
+  const stripe = categories[categories.length - 1];
 
   return (
     <section className={styles["category-list"]}>
