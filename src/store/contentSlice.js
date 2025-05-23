@@ -2,8 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   header: {
-    logo: "Organic Fashion",
-    nav: ["Home", "About", "Shop", "New", "Contact"],
+    logo: "ALTANSCHOOL WEB COURSES",
+    nav: ["HOME", "ABOUT", "SHOP", "NEW", "CONTACT"],
   },
   categories: [
     {
