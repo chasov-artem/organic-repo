@@ -9,6 +9,7 @@ const NewCollection = () => {
 
   return (
     <section className={styles["new-collection"]}>
+      <div className={styles["new-collection__bg"]}></div>
       <h2 className={styles["new-collection__title"]}>New Collection</h2>
       <div className={styles["new-collection__items"]}>
         {newCollection.map((item) => (
@@ -21,7 +22,6 @@ const NewCollection = () => {
                 className={styles["new-collection__img"]}
               />
             </div>
-            <div className={styles["new-collection__name"]}>{item.title}</div>
           </div>
         ))}
       </div>
