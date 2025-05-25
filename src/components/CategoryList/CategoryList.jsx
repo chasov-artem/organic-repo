@@ -17,6 +17,12 @@ const CategoryList = () => {
                 }-2x.png 2x`}
                 media="(max-width: 991px)"
               />
+              <source
+                srcSet={`/992/shop${idx + 1}.png 1x, /992/shop${
+                  idx + 1
+                }-2x.png 2x`}
+                media="(min-width: 992px)"
+              />
               <img
                 src={cat.image}
                 srcSet={`${cat.image2x} 2x`}
