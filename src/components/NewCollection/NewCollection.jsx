@@ -12,15 +12,23 @@ const NewCollection = () => {
       <div className={styles["new-collection__bg"]}></div>
       <h2 className={styles["new-collection__title"]}>New Collection</h2>
       <div className={styles["new-collection__items"]}>
-        {newCollection.map((item) => (
+        {newCollection.map((item, idx) => (
           <div key={item.id} className={styles["new-collection__item"]}>
             <div className={styles["new-collection__img-arc"]}>
-              <img
-                src={item.image}
-                srcSet={`${item.image2x} 2x`}
-                alt={item.title}
-                className={styles["new-collection__img"]}
-              />
+              <picture>
+                <source
+                  srcSet={`/mob/collection${idx + 1}.png 1x, /mob/collection${
+                    idx + 1
+                  }-2x.png 2x`}
+                  media="(max-width: 991px)"
+                />
+                <img
+                  src={item.image}
+                  srcSet={`${item.image2x} 2x`}
+                  alt={item.title}
+                  className={styles["new-collection__img"]}
+                />
+              </picture>
             </div>
           </div>
         ))}
