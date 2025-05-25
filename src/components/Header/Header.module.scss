@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  background: #faf9f8;
+
+  background-color: #ffffff;
   padding: 0;
   box-shadow: none;
 
@@ -72,11 +73,21 @@
     transition: 0.3s;
   }
 
+  @media (min-width: 992px) {
+    .header__burger {
+      display: none;
+    }
+    .header__nav {
+      display: flex;
+    }
+  }
+
   @media (min-width: 1366px) {
     &__container {
       max-width: 1366px;
       padding: 61px 112px 121px 78px;
       align-items: flex-start;
+      background: #faf9f8;
     }
     &__nav {
       display: flex;

@@ -6,6 +6,11 @@ const Hero = () => {
 
   return (
     <section className={styles["hero"]}>
+      <h1
+        className={styles["hero__title"] + " " + styles["hero__title--mobile"]}
+      >
+        {hero.title}
+      </h1>
       <div className={styles["hero__container"]}>
         <div className={styles["hero__img-wrap"]}>
           <picture>
@@ -21,7 +26,13 @@ const Hero = () => {
           </picture>
         </div>
         <div className={styles["hero__content"]}>
-          <h1 className={styles["hero__title"]}>{hero.title}</h1>
+          <h1
+            className={
+              styles["hero__title"] + " " + styles["hero__title--desktop"]
+            }
+          >
+            {hero.title}
+          </h1>
           <p className={styles["hero__text"]}>{hero.text}</p>
           <button className={styles["hero__btn"]}>{hero.button}</button>
         </div>
