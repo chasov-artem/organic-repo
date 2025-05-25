@@ -27,6 +27,16 @@ const CategoryList = () => {
           </div>
         ))}
       </div>
+      {categories[4] && (
+        <div className={styles["category-list__stripe-img-wrap"]}>
+          <img
+            src={categories[4].image}
+            srcSet={`${categories[4].image2x} 2x`}
+            alt={categories[4].title}
+            className={styles["category-list__stripe-img"]}
+          />
+        </div>
+      )}
     </section>
   );
 };
