@@ -70,6 +70,10 @@ const ContactForm = () => {
               srcSet="/mob/followus.png 1x, /mob/followus-2x.png 2x"
               media="(max-width: 991px)"
             />
+            <source
+              srcSet="/992/followus.png 1x, /992/followus-2x.png 2x"
+              media="(min-width: 992px)"
+            />
             <img
               src={contact.image}
               srcSet={`${contact.image2x} 2x`}
