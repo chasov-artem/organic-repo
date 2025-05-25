@@ -65,12 +65,18 @@ const ContactForm = () => {
           </form>
         </div>
         <div className={styles["contact__img-wrap"]}>
-          <img
-            src={contact.image}
-            srcSet={`${contact.image2x} 2x`}
-            alt="Follow us"
-            className={styles["contact__img"]}
-          />
+          <picture>
+            <source
+              srcSet="/mob/followus.png 1x, /mob/followus-2x.png 2x"
+              media="(max-width: 991px)"
+            />
+            <img
+              src={contact.image}
+              srcSet={`${contact.image2x} 2x`}
+              alt="Follow us"
+              className={styles["contact__img"]}
+            />
+          </picture>
         </div>
       </div>
     </section>

@@ -3,12 +3,18 @@ import styles from "./About.module.scss";
 const About = () => (
   <section className={styles["about"]}>
     <div className={styles["about__img-wrap"]}>
-      <img
-        src="/frame1/aboutus.png"
-        srcSet="/frame1/aboutus-2x.png 2x"
-        alt="About"
-        className={styles["about__img"]}
-      />
+      <picture>
+        <source
+          srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
+          media="(max-width: 991px)"
+        />
+        <img
+          src="/frame1/aboutus.png"
+          srcSet="/frame1/aboutus-2x.png 2x"
+          alt="About"
+          className={styles["about__img"]}
+        />
+      </picture>
     </div>
     <div className={styles["about__content"]}>
       <h2 className={styles["about__title"]}>ABOUT US</h2>
