@@ -2,7 +2,11 @@ import styles from "./About.module.scss";
 
 const About = () => (
   <section className={styles["about"]}>
-    <div className={styles["about__img-wrap"]}>
+    <div
+      className={
+        styles["about__img-wrap"] + " " + styles["about__img-wrap--desktop"]
+      }
+    >
       <picture>
         <source
           srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
@@ -29,6 +33,24 @@ const About = () => (
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
+      <div
+        className={
+          styles["about__img-wrap"] + " " + styles["about__img-wrap--mobile"]
+        }
+      >
+        <picture>
+          <source
+            srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
+            media="(max-width: 991px)"
+          />
+          <img
+            src="/frame1/aboutus.png"
+            srcSet="/frame1/aboutus-2x.png 2x"
+            alt="About"
+            className={styles["about__img"]}
+          />
+        </picture>
+      </div>
       <p className={styles["about__text2"]}>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
