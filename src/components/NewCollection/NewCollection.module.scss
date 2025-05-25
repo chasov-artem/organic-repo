@@ -1,10 +1,22 @@
 .new-collection {
-  max-width: 1280px;
+  max-width: 991px;
   margin: 0 auto;
-  padding: 80px 0 91px 0;
+  padding: 38px 0 60px 0;
   width: 100%;
   background: #ededed;
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: #dbdbdb;
+    z-index: 0;
+    pointer-events: none;
+  }
 
   &__bg {
     position: absolute;
@@ -31,18 +43,17 @@
     text-align: center;
     color: #000;
     text-transform: uppercase;
-    padding-bottom: 102px;
+    padding-bottom: 34px;
   }
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-    gap: 70px;
-    width: 100%;
+    gap: 8px;
+    width: auto;
     margin: 0 auto;
-    margin-bottom: 0;
-    padding: 0 0 0 0;
+    padding: 0;
   }
 
   &__item {
@@ -52,32 +63,45 @@
     justify-content: flex-end;
     padding: 0;
     background: transparent;
-    box-shadow: none;
     cursor: pointer;
   }
 
   &__img-arc {
-    border-radius: 170px 170px 0 0;
-    width: 335px;
-    height: 338px;
-    overflow: hidden;
-    background: #ededed;
-    display: flex;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
     align-items: flex-end;
     justify-content: center;
   }
-
+  &__item:nth-child(1) .new-collection__img {
+    width: 143px;
+    height: 154px;
+  }
+  &__item:nth-child(2) .new-collection__img {
+    width: 177px;
+    height: 179px;
+  }
+  &__item:nth-child(3) .new-collection__img {
+    width: 151px;
+    height: 153px;
+  }
+  &__item:nth-child(1) .new-collection__img,
+  &__item:nth-child(3) .new-collection__img {
+    object-fit: contain;
+  }
   &__img {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+    margin: 0 auto;
   }
 
   &__desc-wrap {
     width: 100%;
     background: transparent;
-    margin-top: 61px;
+    margin-top: 25px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -86,102 +110,44 @@
     z-index: 1;
   }
   &__desc {
-    font-size: 24px;
-    color: #222;
-    text-align: center;
-    letter-spacing: 0.15em;
-    font-family: "Crimson Text", serif;
+    max-width: 298px;
     font-weight: 400;
-    max-width: 900px;
-    margin: 0 auto;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: #000;
   }
 
-  @media (max-width: 900px) {
-    &__items {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-    &__img-arc {
-      width: 120px;
-      height: 90px;
-      border-radius: 60px 60px 0 0 / 100% 100% 0 0;
-    }
-    &__img {
-      width: 70px;
-      height: 70px;
-    }
-    &__desc-wrap {
-      padding: 24px 0 24px 0;
-      margin-top: 24px;
-    }
+  &__item:nth-child(2) {
+    flex-shrink: 0;
+    z-index: 2;
   }
-  @media (max-width: 600px) {
-    &__items {
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    &__img-arc {
-      width: 90px;
-      height: 60px;
-      border-radius: 45px 45px 0 0 / 100% 100% 0 0;
-    }
-    &__img {
-      width: 50px;
-      height: 50px;
-    }
-    &__desc-wrap {
-      padding: 16px 0 16px 0;
-      margin-top: 14px;
-    }
+  &__item:nth-child(1),
+  &__item:nth-child(3) {
+    position: relative;
+    top: -20px;
+    margin-bottom: -5px;
+    z-index: 1;
   }
+}
 
-  @media (max-width: 1920px) {
-    .new-collection {
-      max-width: 1600px;
-      padding-left: 40px;
-      padding-right: 40px;
+@media (min-width: 1366px) {
+  .new-collection {
+    &__title {
+      padding-bottom: 102px;
     }
-  }
-  @media (max-width: 1366px) {
-    .new-collection {
-      max-width: 1200px;
-      padding-left: 24px;
-      padding-right: 24px;
+    &__items {
+      gap: 70px;
     }
-    .new-collection__items {
-      gap: 32px;
+    &__img-arc {
+      width: 335px;
+      height: 338px;
     }
-  }
-  @media (max-width: 1280px) {
-    .new-collection {
-      max-width: 1000px;
-      padding-left: 12px;
-      padding-right: 12px;
+    &__desc {
+      font-size: 24px;
     }
-    .new-collection__items {
-      gap: 18px;
-    }
-  }
-  @media (max-width: 992px) {
-    .new-collection {
-      max-width: 700px;
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-    .new-collection__items {
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
-  @media (max-width: 375px) {
-    .new-collection {
-      max-width: 100vw;
-      padding-left: 2px;
-      padding-right: 2px;
-    }
-    .new-collection__items {
-      flex-direction: column;
-      gap: 4px;
+    &__desc-wrap {
+      margin-top: 61px;
     }
   }
 }
