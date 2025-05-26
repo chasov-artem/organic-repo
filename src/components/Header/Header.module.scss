@@ -144,3 +144,28 @@
     color: #768f76;
   }
 }
+
+@media (min-width: 1920px) {
+  .header {
+    &__container {
+      padding: 84px 190px 126px 204px;
+    }
+    &__logo {
+      font-size: 36px;
+    }
+    &__nav {
+      gap: 100px;
+    }
+    &__nav-item {
+      font-size: 36px;
+    }
+    &__img-wrap {
+      width: 578px;
+      height: 596px;
+    }
+    &__img {
+      width: 578px;
+      height: 596px;
+    }
+  }
+}
