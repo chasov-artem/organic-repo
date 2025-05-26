@@ -142,6 +142,7 @@
   .new-collection {
     max-width: 100%;
     padding: 40px 0 71px;
+    background: #fff;
 
     &__title--mobile {
       display: none;
@@ -219,6 +220,7 @@
 
 @media (min-width: 1366px) {
   .new-collection {
+    padding: 81px 88px 150px 103px;
     &__item {
       width: 335px;
       height: 338px;
@@ -226,6 +228,7 @@
     &__items {
       gap: 70px;
       max-width: 1175px;
+      padding-bottom: 62px;
     }
 
     &__item {
@@ -237,5 +240,13 @@
     &__item:nth-child(3) {
       top: 0;
     }
+  }
+
+  .new-collection__title--mobile {
+    display: none !important;
+  }
+  .new-collection__title--desktop {
+    display: block !important;
+    white-space: nowrap;
   }
 }

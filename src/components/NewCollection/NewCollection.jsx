@@ -26,10 +26,7 @@ const NewCollection = () => {
           styles["new-collection__title--desktop"]
         }
       >
-        NEW{" "}
-        <span className={styles["new-collection__title-bottom"]}>
-          COLLECTION
-        </span>
+        NEW COLLECTION
       </h2>
       <div className={styles["new-collection__items"]}>
         {newCollection.map((item, idx) => (
