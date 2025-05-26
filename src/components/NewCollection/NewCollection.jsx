@@ -10,7 +10,27 @@ const NewCollection = () => {
   return (
     <section className={styles["new-collection"]}>
       <div className={styles["new-collection__bg"]}></div>
-      <h2 className={styles["new-collection__title"]}>New Collection</h2>
+      <h2
+        className={
+          styles["new-collection__title"] +
+          " " +
+          styles["new-collection__title--mobile"]
+        }
+      >
+        NEW COLLECTION
+      </h2>
+      <h2
+        className={
+          styles["new-collection__title"] +
+          " " +
+          styles["new-collection__title--desktop"]
+        }
+      >
+        NEW{" "}
+        <span className={styles["new-collection__title-bottom"]}>
+          COLLECTION
+        </span>
+      </h2>
       <div className={styles["new-collection__items"]}>
         {newCollection.map((item, idx) => (
           <div key={item.id} className={styles["new-collection__item"]}>

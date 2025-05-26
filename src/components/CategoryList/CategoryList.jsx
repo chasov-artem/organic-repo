@@ -6,7 +6,27 @@ const CategoryList = () => {
 
   return (
     <section className={styles["category-list"]}>
-      <h2 className={styles["category-list__title"]}>Shop by Categories</h2>
+      <h2
+        className={
+          styles["category-list__title"] +
+          " " +
+          styles["category-list__title--mobile"]
+        }
+      >
+        SHOP BY CATEGORIES
+      </h2>
+      <h2
+        className={
+          styles["category-list__title"] +
+          " " +
+          styles["category-list__title--desktop"]
+        }
+      >
+        <span className={styles["category-list__title-top"]}>SHOP BY</span>
+        <span className={styles["category-list__title-bottom"]}>
+          CATEGORIES
+        </span>
+      </h2>
       <div className={styles["category-list__items"]}>
         {categories.slice(0, 4).map((cat, idx) => (
           <div key={cat.id} className={styles["category-list__item"]}>
