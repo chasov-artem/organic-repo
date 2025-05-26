@@ -41,7 +41,13 @@ const CategoryList = () => {
                 srcSet={`/992/shop${idx + 1}.png 1x, /992/shop${
                   idx + 1
                 }-2x.png 2x`}
-                media="(min-width: 992px)"
+                media="(min-width: 992px) and (max-width: 1365px)"
+              />
+              <source
+                srcSet={`/frame1/shop${idx + 1}.png 1x, /frame1/shop${
+                  idx + 1
+                }-2x.png 2x`}
+                media="(min-width: 1366px)"
               />
               <img
                 src={cat.image}
@@ -55,12 +61,26 @@ const CategoryList = () => {
       </div>
       {categories[4] && (
         <div className={styles["category-list__stripe-img-wrap"]}>
-          <img
-            src={categories[4].image}
-            srcSet={`${categories[4].image2x} 2x`}
-            alt={categories[4].title}
-            className={styles["category-list__stripe-img"]}
-          />
+          <picture>
+            <source
+              srcSet="/mob/shop5.png 1x, /mob/shop5-2x.png 2x"
+              media="(max-width: 991px)"
+            />
+            <source
+              srcSet="/992/shop5.png 1x, /992/shop5-2x.png 2x"
+              media="(min-width: 992px) and (max-width: 1365px)"
+            />
+            <source
+              srcSet="/frame1/shop5.png 1x, /frame1/shop5-2x.png 2x"
+              media="(min-width: 1366px)"
+            />
+            <img
+              src={categories[4].image}
+              srcSet={`${categories[4].image2x} 2x`}
+              alt={categories[4].title}
+              className={styles["category-list__stripe-img"]}
+            />
+          </picture>
         </div>
       )}
     </section>

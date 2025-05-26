@@ -9,12 +9,16 @@ const About = () => (
     >
       <picture>
         <source
+          srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
+          media="(max-width: 991px)"
+        />
+        <source
           srcSet="/992/aboutus.png 1x, /992/aboutus-2x.png 2x"
           media="(min-width: 992px) and (max-width: 1365px)"
         />
         <source
-          srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
-          media="(max-width: 991px)"
+          srcSet="/frame1/aboutus.png 1x, /frame1/aboutus-2x.png 2x"
+          media="(min-width: 1366px)"
         />
         <img
           src="/frame1/aboutus.png"
@@ -44,12 +48,16 @@ const About = () => (
       >
         <picture>
           <source
+            srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
+            media="(max-width: 991px)"
+          />
+          <source
             srcSet="/992/aboutus.png 1x, /992/aboutus-2x.png 2x"
             media="(min-width: 992px) and (max-width: 1365px)"
           />
           <source
-            srcSet="/mob/aboutus.png 1x, /mob/aboutus-2x.png 2x"
-            media="(max-width: 991px)"
+            srcSet="/frame1/aboutus.png 1x, /frame1/aboutus-2x.png 2x"
+            media="(min-width: 1366px)"
           />
           <img
             src="/frame1/aboutus.png"

@@ -46,7 +46,13 @@ const NewCollection = () => {
                   srcSet={`/992/collection${idx + 1}.png 1x, /992/collection${
                     idx + 1
                   }-2x.png 2x`}
-                  media="(min-width: 992px)"
+                  media="(min-width: 992px) and (max-width: 1365px)"
+                />
+                <source
+                  srcSet={`/frame1/collection${
+                    idx + 1
+                  }.png 1x, /frame1/collection${idx + 1}-2x.png 2x`}
+                  media="(min-width: 1366px)"
                 />
                 <img
                   src={item.image}
