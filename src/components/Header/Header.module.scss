@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-
   background-color: #ffffff;
   padding: 0;
   box-shadow: none;
@@ -79,6 +78,10 @@
     }
     .header__nav {
       display: flex;
+      gap: 78px;
+    }
+    .header__container {
+      padding: 45px 88px 93px 61px;
     }
   }
 
