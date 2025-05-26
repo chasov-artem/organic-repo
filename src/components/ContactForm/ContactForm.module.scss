@@ -277,8 +277,8 @@
   @media (min-width: 1366px) {
     & {
       max-width: 1366px;
-      padding: 80px 103px 96px 118px;
-      background: transparent;
+      padding: 81px 148px 131px 156px;
+      // background: transparent;
     }
     &__bg-left {
       display: block;
@@ -296,12 +296,12 @@
       right: 0;
       top: 0;
       bottom: 0;
-      width: 384px;
+      width: 429px;
       background: #dbdbdb;
       z-index: 0;
     }
     &__container {
-      max-width: 1280px;
+      max-width: 1366px;
       flex-direction: row;
       gap: 61px;
       align-items: flex-start;
@@ -313,6 +313,7 @@
       width: 561px;
       align-items: flex-start;
       justify-content: flex-start;
+      padding-top: 66px;
     }
     &__title {
       font-size: 32px;
@@ -339,13 +340,13 @@
     }
     textarea.contact__input {
       height: 130px;
-      min-height: 130px;
-      max-height: 130px;
+      width: 561px;
+      margin: 0;
     }
     &__btn {
-      width: 257px;
-      height: 47px;
-      margin-top: 41px;
+      width: 205px;
+      height: 59px;
+      margin: 32px 0 0 0;
       border-radius: 10px;
       font-size: 20px;
       font-weight: 400;
@@ -367,6 +368,8 @@
     }
     &__img {
       border-radius: 0;
+      width: 439px;
+      height: 624px;
     }
     .custom-placeholder {
       left: 14px;
