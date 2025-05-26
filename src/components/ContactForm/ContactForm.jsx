@@ -28,7 +28,9 @@ const ContactForm = () => {
                 autoComplete="off"
               />
               {!form.name && (
-                <span className={styles["custom-placeholder"]}>Your name</span>
+                <span className={styles["custom-placeholder"]}>
+                  Enter your name
+                </span>
               )}
             </div>
             <div className={styles["input-wrap"]}>
@@ -42,7 +44,7 @@ const ContactForm = () => {
               />
               {!form.email && (
                 <span className={styles["custom-placeholder"]}>
-                  Your email address
+                  Enter a valid email address
                 </span>
               )}
             </div>
