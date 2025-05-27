@@ -392,6 +392,42 @@
       color: #000;
     }
   }
+
+  @media (min-width: 992px) and (max-width: 1365px) {
+    .contact__bg-right {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 302px;
+      background: #dbdbdb;
+      z-index: 0;
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .contact__bg-left {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 656px;
+      background: #f1f1f1;
+      z-index: 0;
+    }
+    .contact__bg-right {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 429px;
+      background: #dbdbdb;
+      z-index: 0;
+    }
+  }
 }
 
 input.contact__input {
