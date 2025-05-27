@@ -18,7 +18,11 @@ const About = () => (
         />
         <source
           srcSet="/frame1/aboutus.png 1x, /frame1/aboutus-2x.png 2x"
-          media="(min-width: 1366px)"
+          media="(min-width: 1366px) and (max-width: 1919px)"
+        />
+        <source
+          srcSet="/1920/aboutus.png 1x, /1920/aboutus-2x.png 2x"
+          media="(min-width: 1920px)"
         />
         <img
           src="/frame1/aboutus.png"
@@ -57,7 +61,11 @@ const About = () => (
           />
           <source
             srcSet="/frame1/aboutus.png 1x, /frame1/aboutus-2x.png 2x"
-            media="(min-width: 1366px)"
+            media="(min-width: 1366px) and (max-width: 1919px)"
+          />
+          <source
+            srcSet="/1920/aboutus.png 1x, /1920/aboutus-2x.png 2x"
+            media="(min-width: 1920px)"
           />
           <img
             src="/frame1/aboutus.png"
