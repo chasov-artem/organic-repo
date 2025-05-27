@@ -1,12 +1,52 @@
-# React + Vite
+# Organic Fashion React Layout
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🧪 **React + Redux + SCSS (BEM)**
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a responsive website layout based on the [Figma Design](https://www.figma.com/community/file/1316469446514771340) using React, Redux, and SCSS with BEM methodology. All texts and images are stored in the Redux store. Components are logically split and reusable.
 
-## Expanding the ESLint configuration
+## Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Redux Toolkit
+- SCSS (BEM)
+- Vite
+
+## Features
+
+- **BEM**: All CSS classes are structured using the BEM methodology
+- **SCSS**: Styles are split by component, using nesting
+- **Redux**: All content (texts, images, buttons) is stored in the store
+- **Responsive**: Supports mobile, tablet, desktop, and 4K screens
+- **Pixel-perfect**: As close to the Figma design as possible, but not fanatical
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+- For deployment to GitHub Pages, use Vite + gh-pages or any other convenient method.
+
+## Requirements (from the task)
+
+- [x] BEM for CSS
+- [x] SCSS for styles
+- [x] React components
+- [x] Redux for content
+- [x] Responsive layout
+- [x] All images and texts via store
+- [x] Code on GitHub
+- [x] Deploy to GitHub Pages
+
+## Links
+
+- [Figma design](https://www.figma.com/community/file/1316469446514771340)
+
+---
+
+**After deployment, add links to the repository and live version here!**
