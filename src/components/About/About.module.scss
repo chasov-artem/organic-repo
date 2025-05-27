@@ -54,6 +54,11 @@
     display: block;
   }
 
+  &__btn:hover {
+    background: #8e9a82;
+    color: #fff;
+  }
+
   &__img-wrap--desktop {
     display: none !important;
   }
