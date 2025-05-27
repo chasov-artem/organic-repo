@@ -24,7 +24,11 @@ const Hero = () => {
             />
             <source
               srcSet="/frame1/hero.png 1x, /frame1/hero-2x.png 2x"
-              media="(min-width: 1366px)"
+              media="(min-width: 1366px) and (max-width: 1919px)"
+            />
+            <source
+              srcSet="/1920/hero.png 1x, /1920/hero-2x.png 2x"
+              media="(min-width: 1920px)"
             />
             <img
               src="/frame1/hero.png"
