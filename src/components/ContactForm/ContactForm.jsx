@@ -70,7 +70,7 @@ const ContactForm = () => {
         <div className={styles["contact__img-wrap"]}>
           <picture>
             <source
-              srcSet="/mob/followus.png 1x, /mob/followus-2x.png 2x"
+              srcSet={`${BASE_URL}mob/followus.png 1x, ${BASE_URL}mob/followus-2x.png 2x`}
               media="(max-width: 991px)"
             />
             <source
