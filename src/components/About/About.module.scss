@@ -50,7 +50,7 @@
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.15em;
-    margin: 0 auto; /* Центрує кнопку */
+    margin: 0 auto;
     display: block;
   }
 
@@ -90,6 +90,8 @@
       font-size: 32px;
       max-width: 100%;
       margin: 0 0 29px 0;
+      text-align: left;
+      padding-top: 0px;
     }
 
     &__text1,
@@ -100,7 +102,9 @@
     }
 
     &__btn {
-      width: 201px;
+      width: 205px;
+      height: 59px;
+      font-size: 20px;
       margin: 0;
     }
   }
@@ -112,6 +116,10 @@
     &__img-wrap--desktop {
       width: 316px;
       height: 626px;
+    }
+
+    &__text2 {
+      margin-bottom: 45px;
     }
   }
 
@@ -138,6 +146,7 @@
       width: 351px;
       height: 88px;
       font-size: 36px;
+      background: transparent;
     }
   }
 

@@ -362,9 +362,13 @@
       z-index: 0;
     }
     .contact__title {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-top: 96px;
       font-size: 48px;
       margin-bottom: 62px;
-      padding-top: 96px;
     }
     .contact__form-wrap {
       padding-top: 0;
