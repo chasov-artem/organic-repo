@@ -5,6 +5,7 @@ import styles from "./ContactForm.module.scss";
 const ContactForm = () => {
   const contact = useSelector((state) => state.content.contact);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const BASE_URL = import.meta.env.BASE_URL;
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -73,21 +74,21 @@ const ContactForm = () => {
               media="(max-width: 991px)"
             />
             <source
-              srcSet="/992/followus.png 1x, /992/followus-2x.png 2x"
+              srcSet={`${BASE_URL}992/followus.png 1x, ${BASE_URL}992/followus-2x.png 2x`}
               media="(min-width: 992px) and (max-width: 1365px)"
             />
             <source
-              srcSet="/1366/followus.png 1x, /1366/followus-2x.png 2x"
+              srcSet={`${BASE_URL}1366/followus.png 1x, ${BASE_URL}1366/followus-2x.png 2x`}
               media="(min-width: 1366px) and (max-width: 1919px)"
             />
             <source
-              srcSet="/1920/followus.png 1x, /1920/followus-2x.png 2x"
+              srcSet={`${BASE_URL}1920/followus.png 1x, ${BASE_URL}1920/followus-2x.png 2x`}
               media="(min-width: 1920px)"
             />
             <img
-              src={contact.image}
-              srcSet={`${contact.image2x} 2x`}
-              alt="Follow us"
+              src={`${BASE_URL}1366/followus.png`}
+              srcSet={`${BASE_URL}1366/followus-2x.png 2x`}
+              alt="Follow Us"
               className={styles["contact__img"]}
             />
           </picture>

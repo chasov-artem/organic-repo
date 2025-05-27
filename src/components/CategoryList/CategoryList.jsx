@@ -3,6 +3,7 @@ import styles from "./CategoryList.module.scss";
 
 const CategoryList = () => {
   const categories = useSelector((state) => state.content.categories);
+  const BASE_URL = import.meta.env.BASE_URL;
 
   return (
     <section className={styles["category-list"]}>
@@ -32,27 +33,27 @@ const CategoryList = () => {
           <div key={cat.id} className={styles["category-list__item"]}>
             <picture>
               <source
-                srcSet={`/mob/shop${idx + 1}.png 1x, /mob/shop${
+                srcSet={`${BASE_URL}mob/shop${
                   idx + 1
-                }-2x.png 2x`}
+                }.png 1x, ${BASE_URL}mob/shop${idx + 1}-2x.png 2x`}
                 media="(max-width: 991px)"
               />
               <source
-                srcSet={`/992/shop${idx + 1}.png 1x, /992/shop${
+                srcSet={`${BASE_URL}992/shop${
                   idx + 1
-                }-2x.png 2x`}
+                }.png 1x, ${BASE_URL}992/shop${idx + 1}-2x.png 2x`}
                 media="(min-width: 992px) and (max-width: 1365px)"
               />
               <source
-                srcSet={`/1366/shop${idx + 1}.png 1x, /1366/shop${
+                srcSet={`${BASE_URL}1366/shop${
                   idx + 1
-                }-2x.png 2x`}
+                }.png 1x, ${BASE_URL}1366/shop${idx + 1}-2x.png 2x`}
                 media="(min-width: 1366px) and (max-width: 1919px)"
               />
               <source
-                srcSet={`/1920/shop${idx + 1}.png 1x, /1920/shop${
+                srcSet={`${BASE_URL}1920/shop${
                   idx + 1
-                }-2x.png 2x`}
+                }.png 1x, ${BASE_URL}1920/shop${idx + 1}-2x.png 2x`}
                 media="(min-width: 1920px)"
               />
               <img
@@ -69,24 +70,24 @@ const CategoryList = () => {
         <div className={styles["category-list__stripe-img-wrap"]}>
           <picture>
             <source
-              srcSet="/mob/shop5.png 1x, /mob/shop5-2x.png 2x"
+              srcSet={`${BASE_URL}mob/shop5.png 1x, ${BASE_URL}mob/shop5-2x.png 2x`}
               media="(max-width: 991px)"
             />
             <source
-              srcSet="/992/shop5.png 1x, /992/shop5-2x.png 2x"
+              srcSet={`${BASE_URL}992/shop5.png 1x, ${BASE_URL}992/shop5-2x.png 2x`}
               media="(min-width: 992px) and (max-width: 1365px)"
             />
             <source
-              srcSet="/1366/shop5.png 1x, /1366/shop5-2x.png 2x"
+              srcSet={`${BASE_URL}1366/shop5.png 1x, ${BASE_URL}1366/shop5-2x.png 2x`}
               media="(min-width: 1366px) and (max-width: 1919px)"
             />
             <source
-              srcSet="/1920/shop5.png 1x, /1920/shop5-2x.png 2x"
+              srcSet={`${BASE_URL}1920/shop5.png 1x, ${BASE_URL}1920/shop5-2x.png 2x`}
               media="(min-width: 1920px)"
             />
             <img
-              src={categories[4].image}
-              srcSet={`${categories[4].image2x} 2x`}
+              src={`${BASE_URL}1366/shop5.png`}
+              srcSet={`${BASE_URL}1366/shop5-2x.png 2x`}
               alt={categories[4].title}
               className={styles["category-list__stripe-img"]}
             />

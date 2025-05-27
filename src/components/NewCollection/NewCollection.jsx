@@ -6,6 +6,7 @@ const NewCollection = () => {
   const description = useSelector(
     (state) => state.content.newCollectionDescription
   );
+  const BASE_URL = import.meta.env.BASE_URL;
 
   return (
     <section className={styles["new-collection"]}>
@@ -34,32 +35,32 @@ const NewCollection = () => {
             <div className={styles["new-collection__img-arc"]}>
               <picture>
                 <source
-                  srcSet={`/mob/collection${idx + 1}.png 1x, /mob/collection${
+                  srcSet={`${BASE_URL}mob/collection${
                     idx + 1
-                  }-2x.png 2x`}
+                  }.png 1x, ${BASE_URL}mob/collection${idx + 1}-2x.png 2x`}
                   media="(max-width: 991px)"
                 />
                 <source
-                  srcSet={`/992/collection${idx + 1}.png 1x, /992/collection${
+                  srcSet={`${BASE_URL}992/collection${
                     idx + 1
-                  }-2x.png 2x`}
+                  }.png 1x, ${BASE_URL}992/collection${idx + 1}-2x.png 2x`}
                   media="(min-width: 992px) and (max-width: 1365px)"
                 />
                 <source
-                  srcSet={`/1366/collection${idx + 1}.png 1x, /1366/collection${
+                  srcSet={`${BASE_URL}1366/collection${
                     idx + 1
-                  }-2x.png 2x`}
+                  }.png 1x, ${BASE_URL}1366/collection${idx + 1}-2x.png 2x`}
                   media="(min-width: 1366px) and (max-width: 1919px)"
                 />
                 <source
-                  srcSet={`/1920/collection${idx + 1}.png 1x, /1920/collection${
+                  srcSet={`${BASE_URL}1920/collection${
                     idx + 1
-                  }-2x.png 2x`}
+                  }.png 1x, ${BASE_URL}1920/collection${idx + 1}-2x.png 2x`}
                   media="(min-width: 1920px)"
                 />
                 <img
-                  src={item.image}
-                  srcSet={`${item.image2x} 2x`}
+                  src={`${BASE_URL}1366/collection${idx + 1}.png`}
+                  srcSet={`${BASE_URL}1366/collection${idx + 1}-2x.png 2x`}
                   alt={item.title}
                   className={styles["new-collection__img"]}
                 />
