@@ -17,7 +17,7 @@ const About = () => (
           media="(min-width: 992px) and (max-width: 1365px)"
         />
         <source
-          srcSet="/frame1/aboutus.png 1x, /frame1/aboutus-2x.png 2x"
+          srcSet="/1366/aboutus.png 1x, /1366/aboutus-2x.png 2x"
           media="(min-width: 1366px) and (max-width: 1919px)"
         />
         <source
@@ -25,8 +25,8 @@ const About = () => (
           media="(min-width: 1920px)"
         />
         <img
-          src="/frame1/aboutus.png"
-          srcSet="/frame1/aboutus-2x.png 2x"
+          src="/1366/aboutus.png"
+          srcSet="/1366/aboutus-2x.png 2x"
           alt="About"
           className={styles["about__img"]}
         />
@@ -60,7 +60,7 @@ const About = () => (
             media="(min-width: 992px) and (max-width: 1365px)"
           />
           <source
-            srcSet="/frame1/aboutus.png 1x, /frame1/aboutus-2x.png 2x"
+            srcSet="/1366/aboutus.png 1x, /1366/aboutus-2x.png 2x"
             media="(min-width: 1366px) and (max-width: 1919px)"
           />
           <source
@@ -68,8 +68,8 @@ const About = () => (
             media="(min-width: 1920px)"
           />
           <img
-            src="/frame1/aboutus.png"
-            srcSet="/frame1/aboutus-2x.png 2x"
+            src="/1366/aboutus.png"
+            srcSet="/1366/aboutus-2x.png 2x"
             alt="About"
             className={styles["about__img"]}
           />

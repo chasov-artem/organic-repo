@@ -77,7 +77,7 @@ const ContactForm = () => {
               media="(min-width: 992px) and (max-width: 1365px)"
             />
             <source
-              srcSet="/frame1/followus.png 1x, /frame1/followus-2x.png 2x"
+              srcSet="/1366/followus.png 1x, /1366/followus-2x.png 2x"
               media="(min-width: 1366px) and (max-width: 1919px)"
             />
             <source
