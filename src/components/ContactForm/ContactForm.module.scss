@@ -112,12 +112,6 @@
       color: #000;
       opacity: 0.7;
     }
-
-    &__textarea {
-      height: 130px;
-      resize: none;
-      padding-top: 15px;
-    }
   }
 
   &__btn {
@@ -219,10 +213,6 @@
       max-width: 436px;
       height: 63px;
       font-size: 18px;
-
-      &__textarea {
-        height: 101px;
-      }
     }
     &__btn {
       width: 436px;
@@ -315,10 +305,6 @@
       max-width: 561px;
       height: 81px;
       font-size: 20px;
-
-      &__textarea {
-        height: 130px;
-      }
     }
     &__btn {
       width: 205px;
@@ -428,4 +414,17 @@
       color: #000;
     }
   }
+}
+
+textarea.contact__input {
+  resize: none;
+  width: 257px;
+  height: 130px;
+  box-sizing: border-box;
+}
+
+input.contact__input {
+  width: 257px;
+  height: 81px;
+  box-sizing: border-box;
 }
