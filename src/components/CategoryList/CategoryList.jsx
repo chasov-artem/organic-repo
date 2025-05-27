@@ -47,7 +47,13 @@ const CategoryList = () => {
                 srcSet={`/frame1/shop${idx + 1}.png 1x, /frame1/shop${
                   idx + 1
                 }-2x.png 2x`}
-                media="(min-width: 1366px)"
+                media="(min-width: 1366px) and (max-width: 1919px)"
+              />
+              <source
+                srcSet={`/1920/shop${idx + 1}.png 1x, /1920/shop${
+                  idx + 1
+                }-2x.png 2x`}
+                media="(min-width: 1920px)"
               />
               <img
                 src={cat.image}
@@ -72,7 +78,11 @@ const CategoryList = () => {
             />
             <source
               srcSet="/frame1/shop5.png 1x, /frame1/shop5-2x.png 2x"
-              media="(min-width: 1366px)"
+              media="(min-width: 1366px) and (max-width: 1919px)"
+            />
+            <source
+              srcSet="/1920/shop5.png 1x, /1920/shop5-2x.png 2x"
+              media="(min-width: 1920px)"
             />
             <img
               src={categories[4].image}
